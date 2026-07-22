@@ -83,7 +83,7 @@ header > p {
     max-width: 600px;
     padding-right: 10px;
     padding-left: 10px;
-    margin-bottom: 20px;
+    padding-bottom: 50px;
     margin: auto;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
 }
@@ -130,7 +130,7 @@ main h2 {
     color: var(--cor4);
     font-size: 1.3em;
     font-weight: normal;
-    background-image: linear-gradient(to right, var(--cor1), trasnparent);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 8px;
 }
 
@@ -146,19 +146,17 @@ main img.pequena {
 
 div.video {
     background-color: var(--cor5);
-    margin-bottom: 30px;
     margin: 0px -20px 30px -20px;
     padding: 20px;
-    padding-bottom: 58%;
-    position: relative;
+    border-radius: 0px 0px 10px 10px;
 }
 
-div video > iframe {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+div.video iframe {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
 }
 aside {
     background-color: var(--cor1);
@@ -175,7 +173,7 @@ aside > h3 {
     border-radius: 10px 10px 0px 0px;
 }
 aside > ul {
-    list-style-position: "✔️";
+    list-style-position: inside;
     columns: 2;
 }
 
